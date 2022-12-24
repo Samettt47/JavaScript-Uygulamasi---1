@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    Kalem Kalınlığı : 
+    <select name="" id="Kalinlik" onchange="KalemKalinlik()">
+        <option value="1">Çok İnce</option>
+        <option value="3">İnce</option>
+        <option value="7">Normal</option>
+        <option value="12">Kalın</option>
+        <option value="15">Çok Kalın</option>
+    </select>
+
+    Kalem Rengi : 
+    <select name="" id="KalemRenk" onchange="KalemRengi()">
+    <option value="black">Siyah</option> <option value="red">Kırmızı</option>
+    <option value="yellow">Sarı</option> <option value="blue">Mavi</option>
+    <option value="green">Yeşil</option> <option value="white">Beyaz</option>
+    </select>
+
+    Zemin Rengi: 
+    <select name="" id="ZeminRenk" onchange="ZeminRengi()">
+        <option value="black">Siyah</option> <option value="red">Kırmızı</option>
+        <option value="yellow">Sarı</option> <option value="blue">Mavi</option>
+        <option value="green">Yeşil</option> <option value="white">Beyaz</option>
+    </select>
+
+    <button onclick="Temizle()">TEMİZLE</button>
+    <br/>
+
+    <canvas id="tablo" onmousedown="Basla(event)" onmouseup="Bitir()" onmousemove="Ciz(event)"></canvas> 
+    <!-- canvas ile üzerinde çizim yaparız   -->
+    <script src="script.js"></script>
+</body>
+</html>
